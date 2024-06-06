@@ -33,6 +33,14 @@
     font-size: 14px;
     color: grey;
     cursor: pointer;
+    /* border:2px solid black; */
+    
+}
+
+.sidebar .newChat img{
+    width:18px;
+    border:2px solid black;
+  
 }
 
 .sidebar .recent{
@@ -67,11 +75,19 @@
 }
 
 .bottom{
-    font-weight: bold;
+    font-weight: 400;
+    font-size:20px;
+}
+
+.bottom img{
+    width:28px;
 }
 
 .bottom .location{
-    font-weight: lighter;
+    font-weight: bold;
+    color:#585858;
+    font-size:16px;
+    margin-top:10px;
 }
 
 .bottom #location{
