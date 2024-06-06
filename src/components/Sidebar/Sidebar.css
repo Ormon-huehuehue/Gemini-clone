@@ -18,18 +18,28 @@
     
     
 }
-.sidebar menu{
-    display: block;
+.sidebar .menu{
+    display: flex;
+    position:fixed;
     cursor: pointer;
-    margin-left: 10px;
+    padding-left:15px;
+    
+    
+    justify-content: center;
+}
 
+.sidebar .menu img{
+    bottom:20px;
+    width:30px;
+    justify-content: center;
+    align-items: center;
 }
 
 .sidebar .newChat{
     margin-top: 100px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     
     
   
@@ -48,8 +58,12 @@
     border-radius: 50px;
     background-color: #e6eaf1;
     color: grey;
-   
+    justify-content: start;
+}
 
+.wao img{
+    width:20px;
+    height:25px;
 }
 
 
@@ -65,7 +79,7 @@
 }
 
 .sidebar .recentEntry{
-    justify-content: center;
+    justify-content: start;
     display:flex;
     gap:20px;
     padding: 10px;
@@ -89,13 +103,13 @@
 .bottom{
     font-weight: 400;
     font-size:20px;
-    align-items: center;
+    
 }
 
 .bottom img{
     
     width:28px;
-    align-items: center;
+   
 }
 
 .bottom .location{
