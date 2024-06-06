@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import "./Sidebar.css"
 import {assets} from "../../assets/assets.js"
+import settings from "../../assets/cog-regular-24.png"
 
 const Sidebar = () => {
 
@@ -12,8 +13,10 @@ const Sidebar = () => {
         <div className="top">
             <img onClick={()=>setExtended(prev=>!prev)} className = "menu" src={assets.menu_icon}/>
             <div className="newChat">
-                <img src = {assets.plus_icon}/>
-                {extended? <p>New Chat</p> : null}
+                <div className="wao">
+                    <img src = {assets.plus_icon}/>
+                    {extended? <p>New Chat</p> : null}
+                </div>
             </div>
             
             {extended? 
@@ -43,7 +46,7 @@ const Sidebar = () => {
             </div>
 
             <div className="bottomItem recentEntry">
-                <img src={assets.setting_icon}/>
+                <img src={settings}/>
                 {extended?  <p> Settings</p> : null}
                
             </div>
