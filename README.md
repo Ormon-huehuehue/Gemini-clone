@@ -1,8 +1,9 @@
-# React + Vite
+Create a gemini API key : https://aistudio.google.com/app/apikey
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+replace the api key with your own api key in ./src/config/gemini.js
 
-Currently, two official plugins are available:
+![image](https://github.com/Ormon-huehuehue/Gemini-clone/assets/120156766/42894a5f-b76a-467f-aba5-d9df5448b39e)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+"npm install" to install all necessary dependencies
+
+"npm run dev" and "CTRL+ click" on the link to test the project.
