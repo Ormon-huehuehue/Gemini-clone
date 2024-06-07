@@ -3,9 +3,11 @@
     min-height: 100vh;
     padding-bottom:15vh;
     position:relative;
+    width:100vw;
 }
 
 .nav{
+    animation:fadeIn 1s;
     display:flex;
     border: #585858;
     align-items: center;
@@ -17,20 +19,24 @@
 
 .nav img{
     width:50px;
+    height:50px;
     border-radius: 50%;
 }
 
 .main-container{
+    animation:fadeIn 1s;
     
     max-width: 1000px;
     margin:0 auto;
 }
 
 .main .greet{
+    animation:fadeIn 2s;
     margin:50px 0px;
     font-size:56px;
     color:#c9cacb;
     font-weight: 500;
+    padding:20px;
     
 }
 
@@ -78,13 +84,12 @@
 
 
 .mainBottom{
-    padding:0px 20px;
+    padding:10px 20px;
     position:absolute;
     bottom:0;
-    
     width:100%;
     max-width: 1000px;
-    margin: 20px;
+   
     
 }
 
@@ -151,6 +156,7 @@
 }
 
 .resultData{
+    animation:fadeIn 1s;
     display:flex;
     align-items: start;
     gap:20px;
@@ -189,3 +195,17 @@
     font-weight: 300;
     line-height: 1.8;
 }   
+
+@media (max-width:600px){
+    .main .card{
+        display:none;
+    }
+    .searchBox input{
+        
+        width:150px;
+    }
+    .bottomInfo{
+        font-size:10px;
+    }
+
+}

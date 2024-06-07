@@ -61,6 +61,11 @@
     justify-content: start;
 }
 
+.sidebar .newChat .wao:hover{
+    background-color: #e2e6eb;
+
+}
+
 .wao img{
     width:20px;
     height:25px;
@@ -88,6 +93,7 @@
     color: #282828;
     cursor:pointer;
     align-items: center;
+    animation:fadeIn 1s;
 }
 
 .sidebar .recentEntry img{
@@ -121,4 +127,11 @@
 
 .bottom #location{
     color: #4a9df5;
+}
+
+
+@media (max-width:600px){
+    .sidebar{
+        display: none;
+    }
 }
