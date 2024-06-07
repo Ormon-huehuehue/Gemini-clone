@@ -6,7 +6,8 @@ import { Context } from '../../context/Context';
 
 const Main = () => {
 
-  const {onSent,recentPrompt,showResult,loading,resultData,setInput,input} = useContext(Context);
+  const {onSent,currentPrompt,showResult,loading,resultData,setInput,input} = useContext(Context);
+
 
 
   return (
@@ -33,12 +34,12 @@ const Main = () => {
             </div>
 
             <div className="card">
-              <p>What is joe mama like in real life?</p>
+              <p>What is the weather like in Delhi</p>
               <img src={assets.message_icon}/>
             </div>
 
             <div className="card">
-              <p>Skibidi ohio gyatmaxxing</p>
+              <p>Your are my sunshine</p>
               <img src={assets.code_icon}/>
             </div>
 
@@ -52,7 +53,7 @@ const Main = () => {
             <div className = "result">
               <div className = "resultTitle">
                 <img src={assets.user_icon}/>
-                <p>{recentPrompt}</p>
+                <p>{currentPrompt}</p>
               </div>
               <div className = "resultData">
                 <img src={assets.gemini_icon}/>
@@ -74,11 +75,18 @@ const Main = () => {
           
           <div className="mainBottom">
             <div className="searchBox">
-              <input onChange={(e)=>setInput(e.target.value)} value ={input} type="text" placeholder="Enter a prompt here"/>
+              <input onChange={(e)=>setInput(e.target.value)} value ={input} type="text" placeholder="Enter a prompt here"  
+                onKeyDown={(e)=>{
+                  if(e.key=="Enter" && input!=""){
+                      onSent();
+                  }
+                }}
+              />
               <div>
                 <img src={assets.gallery_icon} alt="" />
                 <img src={assets.mic_icon} alt="" />
-                <img onClick={()=>onSent()} src={assets.send_icon} alt="" />
+                {input!=""?  <img onClick={()=>onSent()} src={assets.send_icon} alt="" /> : null} 
+               
               </div>
             </div>
             <div>
